@@ -1,0 +1,56 @@
+{
+  "auto_confirm_commands": [
+    "ls",
+    "pwd",
+    "cat",
+    "grep",
+    "find",
+    "head",
+    "tail",
+    "which",
+    "wc",
+    "echo",
+    "git status",
+    "git diff",
+    "git log",
+    "npm run",
+    "yarn",
+    "python --version",
+    "node --version"
+  ],
+  "auto_confirm_file_operations": {
+    "read": true,
+    "write": false,
+    "create": false,
+    "delete": false
+  },
+  "memory": {
+    "enabled": true,
+    "max_entries": 1000
+  },
+  "editor": {
+    "preferred": "vim"
+  },
+  "project_conventions": {
+    "javascript": {
+      "test_command": "npm test",
+      "build_command": "npm run build",
+      "lint_command": "npm run lint"
+    },
+    "python": {
+      "test_command": "python -m pytest",
+      "lint_command": "flake8"
+    }
+  },
+  "security": {
+    "allow_network_operations": false,
+    "restrict_file_access": [],
+    "block_sensitive_patterns": [
+      "password",
+      "api_key",
+      "secret",
+      "token",
+      "private_key"
+    ]
+  }
+}
